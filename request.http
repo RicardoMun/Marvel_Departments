@@ -1,0 +1,36 @@
+###
+POST http://localhost:3000/api/v1/people/person HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Juan",
+  "lastName": "Gómez",
+  "age": 41,
+  "address": {
+    "city": "Pasto",
+    "zip_code": "270002"
+  }
+}
+
+###
+GET http://localhost:3000/api/v1/people HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/people/622cd331a320c5ab8f5ea3be HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/people/622cd331a320c5ab8f5ea3be HTTP/1.1
+Content-Type: application/json
+{
+  "age": "25",
+  "address": {
+    "city": "Génova",
+    "zip_code": "120008"
+  }
+}
+
+###
+GET http://localhost:3000/api/v1/departaments HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/departaments/5 HTTP/1.1
